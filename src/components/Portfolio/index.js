@@ -27,23 +27,25 @@ function Portfolio() {
     ]);
 
     return (
-        <div className="container">
+        <section id="portfolio" class="portfolio">
+            <div className="container">
 
-            <div className="section-title">
-                <h2>Portfolio</h2>
-                <p>A Few Project i have developed For myself and Others. Enjoy!</p>
-            </div>
-            <div className="row portfolio-container">
-                {projects.map((project, idx) => (
-                    <Project
-                        project={project}
-                        key={"project" + idx}
-                    >
-                    </Project>
-                ))}
-            </div>
+                <div className="section-title">
+                    <h2>Portfolio</h2>
+                    <p>A Few Project i have developed For myself and Others. Enjoy!</p>
+                </div>
+                <div className="row portfolio-container">
+                    {projects.map((project, idx) => (
+                        <Project
+                            project={project}
+                            key={"project" + idx}
+                        >
+                        </Project>
+                    ))}
+                </div>
 
-        </div>
+            </div>
+        </section>
 
 
     );

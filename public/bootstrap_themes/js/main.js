@@ -145,7 +145,8 @@
     autoplay: true,
     dots: true,
     loop: true,
-    items: 1
+    items: 1,
+    rtl:true
   });
 
   // Porfolio isotope and filter
