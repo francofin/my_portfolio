@@ -13,7 +13,7 @@ function Footer() {
             <div className="row  justify-content-center">
               <div className="col-lg-6">
                 <h3>Francofin</h3>
-                <p>Where Business Start in order to Grow.</p>
+                <p>Where Businesses Seek Growth.</p>
               </div>
             </div>
     

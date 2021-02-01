@@ -23,7 +23,18 @@ function Portfolio() {
             name: 'python-bootcamp',
             description: 'Repo for financial Analysis Python Codes',
             link: 'https://github.com/francofin/fintankv3'
-        }
+        },
+        {
+            name: 'Runbuddy',
+            description: 'Runners Paradise',
+            link: 'https://github.com/francofin/fintankv3'
+        },
+        {
+            name: 'zoo-keeper',
+            description: 'Toronto Zoo Management',
+            link: 'https://agile-meadow-78303.herokuapp.com/'
+        },
+
     ]);
 
     return (
