@@ -1,5 +1,7 @@
 import React, { useEffect} from "react";
 import { capitalizeFirstLetter } from "../../utils/helpers";
+import Scroll from 'react-scroll'
+import { ScrollView } from 'react-native';
 
 
 function Nav(props) {
@@ -9,7 +11,7 @@ function Nav(props) {
         setCurrentPage,
         currentPage,
     } = props;
-
+    const anchor = document.querySelector(`#${Page.name}`)
     useEffect(() => {
         document.title = capitalizeFirstLetter(currentPage.name);
     }, [currentPage]);
@@ -30,6 +32,7 @@ function Nav(props) {
                   key={Page.name}
                 >
                   <a onClick={() => setCurrentPage(Page)} href={`#${Page.name}`}>
+                    
                     {capitalizeFirstLetter(Page.name)}
                   </a>
                 </li>

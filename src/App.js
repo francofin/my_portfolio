@@ -6,6 +6,8 @@ import About from "./components/About";
 import Portfolio from "./components/Portfolio";
 import Testimonials from "./components/Testimonials";
 import Footer from './components/Footer';
+import Contact from './components/Contact';
+import Resume from './components/Resume';
 
 
 function App() {
@@ -31,8 +33,10 @@ function App() {
      </Header>
      <main id="main">
      <About></About>
+     <Resume></Resume>
      <Testimonials></Testimonials>
      <Portfolio></Portfolio>
+     <Contact></Contact>
      </main>
      <Footer></Footer>
     </div>
