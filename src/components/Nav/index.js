@@ -31,8 +31,8 @@ function Nav(props) {
           <ul>
             {pages.map((Page) => (
               <ScrollLink
-              key = {page.name}
-              to={page.name}
+              key = {Page.name}
+              to={Page.name}
               spy={true}
               smooth={true}
               duration={500}
