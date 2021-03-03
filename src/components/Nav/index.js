@@ -1,5 +1,6 @@
 import React, { useEffect} from "react";
 import { capitalizeFirstLetter } from "../../utils/helpers";
+import { Link } from "react-router-dom";
 
 
 
@@ -30,10 +31,10 @@ function Nav(props) {
                 <li className={`${currentPage.name===Page.name}`}
                   key={Page.name}
                 >
-                  <a onClick={() => setCurrentPage(Page)} href={`#${Page.name}`}>
+                  <Link onClick={() => setCurrentPage(Page)} to={`#${Page.name}`}>
                     
                     {capitalizeFirstLetter(Page.name)}
-                  </a>
+                  </Link>
                 </li>
             ))}
             </ul>

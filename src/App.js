@@ -34,15 +34,13 @@ function App() {
         <Header>
         </Header>
         <main id="main">
-        <Switch>
-          <Route exact path="/about" component={About}/>
-          <Route exact path="/resume" component={Resume}/>
-          <Route exact path="/testimonials" component={Testimonials}/>
-          <Route exact path="/portfolio" component={Portfolio}/>
-          <Route exact path="/contact" component={Contact}/>
-          </Switch>
+          <About></About>
+          <Resume></Resume>
+          <Testimonials></Testimonials>
+          <Portfolio></Portfolio>
+          <Contact></Contact>
         </main>
-        <Footer/>
+        <Footer></Footer>
       </div>
     </Router>
 
