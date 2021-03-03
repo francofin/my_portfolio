@@ -27,24 +27,30 @@ function Nav(props) {
         </div>
 
         <nav className="nav-menu d-none d-lg-block">
-        {pages.map((Page) => (
-          <ScrollLink
-          key={Page.name}
-            to={Page.name}
-            spy={true}
-            smooth={true}
-            duration={500}
-            className='some-class'
-            activeClass='some-active-class'
-          >
+     
           <ul>
-            
-              <li className={`${currentPage.name === Page.name}`}>
+            {pages.map((Page) => (
+              <ScrollLink
+              key = {page.name}
+              to={page.name}
+              spy={true}
+              smooth={true}
+              duration={500}
+              className='some-class'
+              activeClass='some-active-class'
+              
+            >
+              <li className={`${currentPage.name === Page.name}`}
+                
+              >
+                <Link onClick={() => setCurrentPage(Page)} to={`#${Page.name}`}>
+                  {capitalizeFirstLetter(Page.name)}
+                </Link>
               </li>
-            
+              </ScrollLink>
+            ))}
+        
           </ul>
-          </ScrollLink>
-          ))}
         </nav>
 
       </div>
