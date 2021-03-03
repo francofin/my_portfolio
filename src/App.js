@@ -35,7 +35,6 @@ function App() {
         </Header>
         <Switch>
           <main id="main">
-          <Route exact path="/about" component={About} />
             <About></About>
             <Resume></Resume>
             <Testimonials></Testimonials>
