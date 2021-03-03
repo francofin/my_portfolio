@@ -30,9 +30,9 @@ function Portfolio() {
             link: 'https://github.com/francofin/fintankv3'
         },
         {
-            name: 'zoo-keeper',
-            description: 'Toronto Zoo Management',
-            link: 'https://agile-meadow-78303.herokuapp.com/'
+            name: 'H!red',
+            description: 'Hired, Where Workers Combine',
+            link: 'https://hiired.herokuapp.com/'
         },
 
     ]);
