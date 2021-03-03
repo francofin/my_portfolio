@@ -48,7 +48,7 @@ function Contact() {
       </div>
 
       <div className="map">
-      <iframe style={{ minHeight: 400, maxHeight: 400, minWidth: 2000 }} src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.965285898797!2d-79.38306128450236!3d43.64889057912149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34cd578a5c61%3A0xea0589912e09cc06!2sFirst%20Canadian%20Place%2C%20Toronto%2C%20ON!5e0!3m2!1sen!2sca!4v1612237717289!5m2!1sen!2sca" ></iframe>
+      <iframe style={{ minHeight: 400, maxHeight: 400, minWidth: 1700 }} src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.965285898797!2d-79.38306128450236!3d43.64889057912149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34cd578a5c61%3A0xea0589912e09cc06!2sFirst%20Canadian%20Place%2C%20Toronto%2C%20ON!5e0!3m2!1sen!2sca!4v1612237717289!5m2!1sen!2sca" ></iframe>
         {/* <iframe style={{Border:0, Width: 100, Height: 350}} src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.965285903723!2d-79.38306664962725!3d43.64889057901901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34cd578a5c61%3A0xea0589912e09cc06!2sFirst%20Canadian%20Place%2C%20Toronto%2C%20ON!5e0!3m2!1sen!2sca!4v1612236358053!5m2!1sen!2sca" allowfullscreen></iframe> */}
       </div>
       
