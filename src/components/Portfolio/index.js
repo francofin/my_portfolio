@@ -30,7 +30,7 @@ function Portfolio() {
             link: 'https://github.com/francofin/fintankv3'
         },
         {
-            name: 'H!red',
+            name: 'Hired',
             description: 'Hired, Where Workers Combine',
             link: 'https://hiired.herokuapp.com/'
         },
