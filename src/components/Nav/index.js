@@ -27,17 +27,24 @@ function Nav(props) {
         </div>
 
         <nav className="nav-menu d-none d-lg-block">
+        {pages.map((Page) => (
+          <ScrollLink
+          key={Page.name}
+            to={Page.name}
+            spy={true}
+            smooth={true}
+            duration={500}
+            className='some-class'
+            activeClass='some-active-class'
+          >
           <ul>
-            {pages.map((Page) => (
-              <li className={`${currentPage.name === Page.name}`}
-                key={Page.name}
-              >
-                <Link onClick={() => setCurrentPage(Page)} to={document.querySelector(`#${Page.name}`).scrollIntoView({ behavior: 'smooth', block: 'center' })}>
-                  {capitalizeFirstLetter(Page.name)}
-                </Link>
+            
+              <li className={`${currentPage.name === Page.name}`}>
               </li>
-            ))}
+            
           </ul>
+          </ScrollLink>
+          ))}
         </nav>
 
       </div>
