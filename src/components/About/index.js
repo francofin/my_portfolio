@@ -6,7 +6,7 @@ function About() {
   return (
 
     <section id='about' className='about'>
-      <div className="container" id='about'>
+      <div className="container">
 
         <div className="row content">
           <div className="col-lg-6">

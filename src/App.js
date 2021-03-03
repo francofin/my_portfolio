@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
 import Nav from "./components/Nav";
 // import Page from "./components/Page";
 import Header from "./components/Header";
@@ -16,34 +16,31 @@ function App() {
     {
       name: 'about',
     },
-    { name: 'portfolio' },
-    { name: 'contact' },
-    { name: 'resume' },
+    { name: 'portfolio'},
+    { name: 'contact'},
+    { name: 'resume'},
   ]);
 
   const [currentPage, setCurrentPage] = useState(pages[0]);
   return (
-    <Router>
-      <div>
-        <Nav
-          pages={pages}
-          setCurrentPage={setCurrentPage}
-          currentPage={currentPage}
-        >
-        </Nav>
-        <Header>
-        </Header>
-        <main id="main">
-          <About></About>
-          <Resume></Resume>
-          <Testimonials></Testimonials>
-          <Portfolio></Portfolio>
-          <Contact></Contact>
-        </main>
-        <Footer></Footer>
-      </div>
-    </Router>
-
+    <div>
+      <Nav
+      pages={pages}
+      setCurrentPage = {setCurrentPage}
+      currentPage = {currentPage}
+      >
+      </Nav>
+     <Header>
+     </Header>
+     <main id="main">
+     <About></About>
+     <Resume></Resume>
+     <Testimonials></Testimonials>
+     <Portfolio></Portfolio>
+     <Contact></Contact>
+     </main>
+     <Footer></Footer>
+    </div>
   );
 }
 

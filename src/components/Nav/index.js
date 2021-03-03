@@ -31,8 +31,7 @@ function Nav(props) {
                 <li className={`${currentPage.name===Page.name}`}
                   key={Page.name}
                 >
-                  <Link onClick={() => setCurrentPage(Page)} to={`#${Page.name}`}>
-                    
+                  <Link onClick={() => setCurrentPage(Page)} to={`#${Page.name}`}>  
                     {capitalizeFirstLetter(Page.name)}
                   </Link>
                 </li>
