@@ -16,31 +16,36 @@ function App() {
     {
       name: 'about',
     },
-    { name: 'portfolio'},
-    { name: 'contact'},
-    { name: 'resume'},
+    { name: 'portfolio' },
+    { name: 'contact' },
+    { name: 'resume' },
   ]);
 
   const [currentPage, setCurrentPage] = useState(pages[0]);
   return (
-    <div>
-      <Nav
-      pages={pages}
-      setCurrentPage = {setCurrentPage}
-      currentPage = {currentPage}
-      >
-      </Nav>
-     <Header>
-     </Header>
-     <main id="main">
-     <About></About>
-     <Resume></Resume>
-     <Testimonials></Testimonials>
-     <Portfolio></Portfolio>
-     <Contact></Contact>
-     </main>
-     <Footer></Footer>
-    </div>
+    <Router>
+      <div>
+        <Nav
+          pages={pages}
+          setCurrentPage={setCurrentPage}
+          currentPage={currentPage}
+        >
+        </Nav>
+        <Header>
+        </Header>
+        <Switch>
+          <main id="main">
+            <About></About>
+            <Resume></Resume>
+            <Testimonials></Testimonials>
+            <Portfolio></Portfolio>
+            <Contact></Contact>
+          </main>
+        </Switch>
+        <Footer></Footer>
+      </div>
+    </Router>
+
   );
 }
 
